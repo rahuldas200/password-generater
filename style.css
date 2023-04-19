@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=PT+Sans+Narrow&display=swap');
 *,
 *::before,
 *::after {
@@ -5,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
+
 }
 
 
@@ -30,7 +32,8 @@ body{
    height: 100vh; 
    width: 100vw;
    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   background-image: linear-gradient(to left, rgba(186, 15, 63, 0.742), rgb(170, 27, 226));
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -43,11 +46,13 @@ body{
 
 }
 .conatiner h1{
+    font-family: 'PT Sans Narrow', sans-serif;
     color: var(--pl-white);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     text-align: center;
-    line-height: 1.2;  
+    line-height: 1.2; 
+    margin-bottom: 10px; 
     
 }
 
@@ -84,22 +89,49 @@ body{
     border-radius: 1rem;
 }
 .display-container button {
+    
     position:absolute;
     top:50%;
     right:1.5rem;
     transform: translateY(-50%);
     background-color: var(--dk-violet);
     cursor: pointer;
+    border: none;
     
     
 
 }
 .input-container{
+    font-family: 'Dongle', sans-serif;
     width:100%;
-    background-color: var(--dk-violet);
+    background-image: linear-gradient(
+        35deg,
+        hsl(245deg 78% 22%) 24%,
+        hsl(250deg 62% 26%) 45%,
+        hsl(253deg 51% 30%) 49%,
+        hsl(255deg 43% 34%) 50%,
+        hsl(256deg 36% 39%) 50%,
+        hsl(258deg 30% 43%) 50%,
+        hsl(259deg 26% 48%) 50%,
+        hsl(259deg 24% 52%) 50%,
+        hsl(260deg 24% 57%) 50%,
+        hsl(261deg 24% 61%) 52%,
+        hsl(261deg 24% 66%) 54%,
+        hsl(261deg 25% 71%) 57%,
+        hsl(262deg 25% 75%) 61%,
+        hsl(262deg 25% 80%) 66%,
+        hsl(262deg 25% 85%) 72%,
+        hsl(263deg 25% 90%) 80%,
+        hsl(263deg 26% 95%) 89%,
+        hsl(0deg 0% 100%) 100%
+      );
     border-radius: 1rem;
     padding: 2rem;
+    margin-bottom: 10px;
     border-bottom: 0.35rem solid var(--lt-violet2);
+    -webkit-box-shadow: -22px 19px 23px -5px rgba(9,9,121,0.73);
+-moz-box-shadow: -22px 19px 23px -5px rgba(9,9,121,0.73);
+box-shadow: -22px 19px 23px -5px rgba(9,9,121,0.73);
     
 }
 .length-container{
@@ -108,11 +140,11 @@ body{
     align-items: center;
 }
 .length-container p:nth-child(1) {
-    color: var(--pl-white);
+    color: black;
     font-size: 1.5rem;
 }
 .length-container p:nth-child(2) {
-    color: var(--vb-yellow);
+    color:black;
     font-size: 1.5rem;
 }
 .strength-container{
